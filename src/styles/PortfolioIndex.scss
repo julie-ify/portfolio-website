@@ -1,0 +1,149 @@
+@import '.././App.scss';
+.Portfolio-outer-grid {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 72px;
+	gap: 24px;
+}
+
+.Portfolio-inner-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.Project-1 {
+	background: url('../images/portfolio/mobile/image-portfolio-manage@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 375px;
+	height: 310px;
+}
+
+.Project-2 {
+	background: url('../images/portfolio/mobile/image-portfolio-bookmark@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 375px;
+	height: 310px;
+}
+
+.Project-3 {
+	background: url('../images/portfolio/mobile/image-portfolio-insure@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 375px;
+	height: 310px;
+}
+
+.Project-4 {
+	background: url('../images/portfolio/mobile/image-portfolio-fylo@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 375px;
+	height: 310px;
+}
+
+.Portfolio-main-text-wrap {
+	margin-top: 0;
+}
+
+.Portfolio-Paragraph-text {
+	max-width: 311px;
+	color: $grayish-dark-blue;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	opacity: 0.8;
+}
+
+.Portfolio-inner-grid .First,
+.Portfolio-inner-grid .Second {
+	width: 100%;
+	height: 1px;
+	flex-shrink: 0;
+	opacity: 0.15;
+	background: $grayish-dark-blue;
+}
+
+
+@media (min-width: 768px) {
+	.Portfolio-outer-grid {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 100px;
+		align-items: center;
+		gap: 52px;
+		height: 550px;
+	}
+
+	.Portfolio-inner-grid {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.Project-1 {
+		background: url('../images/portfolio/tablet/image-portfolio-manage@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 375px;
+		height: 275px;
+	}
+
+	// .Portfolio-main-text-wrap {
+	// 	margin-top: 45px;
+	// }
+
+	.Portfolio-Paragraph-text {
+		max-width: 339px;
+	}
+
+	.Portfolio-inner-grid .Second {
+		margin-top: 40px;
+	}
+}
+
+@media (min-width: 1110px) {
+	.Portfolio-outer-grid {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 100px;
+		gap: 130px;
+		height: 600px;
+		width: 100%;
+	}
+
+	.Portfolio-inner-grid {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.Project-1 {
+		background: url('../images/homepage/desktop/profile.jpg'), no-repeat;
+		background-position: center;
+		background-size: cover;
+		max-width: 400px;
+		height: 560px;
+	}
+
+	// .Portfolio-main-text-wrap {
+	// 	margin-top: 45px;
+	// }
+
+	.Paragraph-text {
+		max-width: 350px;
+	}
+
+	.Portfolio-inner-grid .Second {
+		margin-top: 40px;
+	}
+}
