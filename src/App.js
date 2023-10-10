@@ -1,15 +1,10 @@
 import { Route, Routes } from 'react-router';
 import './App.scss';
 import Home from './pages/Home';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
 import PortfolioIndex from './pages/PortfolioIndex';
 import PortfolioDetail from './pages/PortfolioDetail';
-// import { useParams } from 'react-router-dom';
 
 function App() {
-	// const paramSlug = useParams();
-	// console.log(paramSlug)
 	return (
 		<>
 			<div className="App">
