@@ -3,6 +3,7 @@ import './App.scss';
 import Home from './pages/Home';
 import PortfolioIndex from './pages/PortfolioIndex';
 import PortfolioDetail from './pages/PortfolioDetail';
+import PageNotFound from './pages/PageNotFound';
 
 function App() {
 	return (
@@ -13,7 +14,7 @@ function App() {
 						<Route path="/" element={<Home />} />
 						<Route path="/portfolio" element={<PortfolioIndex />} />
 						<Route path="/portfolio/:slug" element={<PortfolioDetail />} />
-						<Route path="*" element={<h1>No page here</h1>} />
+						<Route path="*" element={<PageNotFound />} />
 					</Routes>
 				</div>
 			</div>

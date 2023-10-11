@@ -27,7 +27,7 @@
 }
 
 .Plain-button-wrap {
-	max-width: 202px;
+	width: 202px;
 	height: 48px;
 	flex-shrink: 0;
 	outline: 0;
@@ -47,8 +47,9 @@
 }
 
 .Color-button-text,
-.Plain-button-text {
-	width: 152px;
+.Plain-button-text,
+.Project-button-text {
+	// width: 152px;
 	text-align: center;
 	font-family: 'Public Sans', sans-serif;
 	font-size: 12px;
@@ -57,4 +58,24 @@
 	line-height: normal;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+
+.Project-button-wrap {
+	width: 178px;
+	height: 48px;
+	flex-shrink: 0;
+	outline: 0;
+	padding: 0;
+	background-color: $bg-light-grey;
+	border: 1px solid $grayish-dark-blue;
+
+	&:hover {
+		background-color: $grayish-dark-blue;
+		color: $bg-light-grey;
+		cursor: pointer;
+	}
+
+	&:disabled {
+		background-color: $grayish-dark-blue;
+	}
 }

@@ -1,1 +1,622 @@
 @import '.././App.scss';
+
+.Project-outer-grid {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 72px;
+	gap: 34px;
+	width: 100%;
+}
+
+.Project-inner-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+	max-width: 311px;
+}
+
+.Project-outer-wrap {
+	display: flex;
+	flex-direction: column;
+	max-width: 311px;
+}
+
+.Project-wrap-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.Project-wrapper-grid {
+	display: flex;
+	flex-direction: row;
+}
+
+.Project-main-text-wrap {
+	margin-top: 0;
+}
+
+.Project-Paragraph-text {
+	max-width: 311px;
+	color: $grayish-dark-blue;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	opacity: 0.8;
+}
+
+.text-visibility-1 {
+	display: none;
+}
+
+.text-visibility-2 {
+	display: block;
+}
+
+.Hr-first,
+.Hr-second {
+	width: 100%;
+	height: 1px;
+	flex-shrink: 0;
+	opacity: 0.15;
+	background: $grayish-dark-blue;
+}
+
+.Project-card-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.Project-skills,
+.Project-tech {
+	color: $cyan;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px;
+}
+
+.Project-middle-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	margin-top: 48px;
+}
+
+.Project-middle1-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+}
+
+.Select-project {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-top: 1px solid rgb(51, 50, 61, 0.15);
+	border-bottom: 1px solid rgb(51, 50, 61, 0.15);
+	margin-bottom: 64px;
+}
+
+.Previous-project {
+	border-right: 1px solid rgb(51, 50, 61, 0.15);
+	padding: 24px 42px 24px 0;
+}
+
+.Next-project {
+	padding: 24px 0;
+}
+
+////////////////////////////////////
+
+.Project-img-width {
+	max-width: 300px;
+	height: 140px;
+	margin: 0 auto;
+}
+
+.Project-img-cover {
+	max-width: 311px;
+}
+
+.Project-id-1 {
+	background: url('../images/detail/mobile/image-manage-hero@2x.jpg'), no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-id-2 {
+	background: url('../images/detail/mobile/image-bookmark-hero@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-id-3 {
+	background: url('../images/detail/mobile/image-insure-hero@2x.jpg'), no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-id-4 {
+	background: url('../images/detail/mobile/image-fylo-hero@2x.jpg'), no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+//////////////////////////////////
+
+.Project-prev-width {
+	max-width: 313px;
+	height: 197px;
+}
+
+.Project-prev-1 {
+	background: url('../images/detail/mobile/image-manage-preview-1@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-prev-1-second {
+	background: url('../images/detail/mobile/image-manage-preview-2@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/////////////////////
+.Project-prev-2 {
+	background: url('../images/detail/mobile/image-bookmark-preview-1@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-prev-2-second {
+	background: url('../images/detail/mobile/image-bookmark-preview-2@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+//////////////////
+.Project-prev-3 {
+	background: url('../images/detail/mobile/image-insure-preview-1@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-prev-3-second {
+	background: url('../images/detail/mobile/image-insure-preview-2@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+////////////
+.Project-prev-4 {
+	background: url('../images/detail/mobile/image-fylo-preview-1@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-prev-4-second {
+	background: url('../images/detail/mobile/image-fylo-preview-2@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+////////
+
+@media (min-width: 768px) {
+	.Project-outer-grid {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 100px;
+		align-items: center;
+		gap: 52px;
+		margin-bottom: 70px;
+		max-width: 100%;
+	}
+
+	.Project-inner-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		min-width: 689px;
+		margin: 0 auto;
+	}
+
+	.Project-outer-wrap {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.Project-wrap-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		max-width: 689px;
+	}
+
+	.Project-wrapper-grid {
+		display: flex;
+		flex-direction: row;
+		grid-column: span 2;
+		gap: 20px;
+		justify-content: space-between;
+	}
+
+	.Project-wrapper-grid .Project-Paragraph-text {
+		max-width: 339px;
+	}
+
+	.Project-Paragraph-text {
+		max-width: 688px;
+	}
+
+	.text-visibility-1 {
+		display: block;
+		order: 1;
+	}
+
+	.text-visibility-2 {
+		display: none;
+	}
+
+	.Hr-first {
+		grid-column: span 2;
+	}
+
+	.Hr-second {
+		grid-column: span 2;
+	}
+
+	.Project-card-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.Project-skills,
+	.Project-tech {
+		color: $cyan;
+		font-family: 'Public Sans', sans-serif;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 30px;
+	}
+
+	.Project-middle-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin-top: 48px;
+	}
+
+	.Project-middle1-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+	}
+
+	/////////////
+
+	.Project-img-width {
+		min-width: 689px;
+		max-width: none;
+		height: 310px;
+		margin: 0 auto;
+	}
+
+	.Project-img-cover {
+		max-width: 689px;
+	}
+
+	.Project-id-1 {
+		background: url('../images/detail/tablet/image-manage-hero@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-id-2 {
+		background: url('../images/detail/tablet/image-bookmark-hero@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-id-3 {
+		background: url('../images/detail/tablet/image-insure-hero@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-id-4 {
+		background: url('../images/detail/tablet/image-fylo-hero@2x.jpg'), no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	///////////////////////////
+
+	.Project-prev-width {
+		min-width: 689px;
+		height: 434px;
+	}
+
+	/////////////////////////////
+
+	.Project-prev-1 {
+		background: url('../images/detail/tablet/image-manage-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-1-second {
+		background: url('../images/detail/tablet/image-manage-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	/////////////////////
+	.Project-prev-2 {
+		background: url('../images/detail/tablet/image-bookmark-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-2-second {
+		background: url('../images/detail/tablet/image-bookmark-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	//////////////////
+	.Project-prev-3 {
+		background: url('../images/detail/tablet/image-insure-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-3-second {
+		background: url('../images/detail/tablet/image-insure-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	////////////
+	.Project-prev-4 {
+		background: url('../images/detail/tablet/image-fylo-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-4-second {
+		background: url('../images/detail/tablet/image-fylo-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	////////
+}
+
+@media (min-width: 1110px) {
+	.Project-outer-grid {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 100px;
+		align-items: center;
+		gap: 52px;
+		margin-bottom: 70px;
+		max-width: 1030px;
+	}
+
+	.Project-inner-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 48px;
+		min-width: 0;
+		margin: 0 auto;
+	}
+
+	.Project-outer-wrap {
+		display: block;
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.Project-wrap-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		min-width: 0;
+	}
+
+	.Project-wrapper-grid {
+		display: block;
+		gap: 20px;
+	}
+
+	.Project-outer-wrap {
+		display: flex;
+		flex-direction: row;
+		min-width: 1040px;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.Project-Paragraph-text {
+		max-width: 635px;
+	}
+
+	.text-visibility-1 {
+		display: none;
+		order: 1;
+	}
+
+	.text-visibility-2 {
+		display: block;
+	}
+
+	.Hr-first {
+		grid-column: span 1;
+	}
+
+	.Hr-second {
+		grid-column: span 1;
+	}
+
+	.Project-card-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.Project-skills,
+	.Project-tech {
+		color: $cyan;
+		font-family: 'Public Sans', sans-serif;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 30px;
+	}
+
+	.Project-middle-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+		margin-top: 0;
+	}
+
+	.Project-middle1-grid {
+		display: flex;
+		flex-direction: column;
+		gap: 28px;
+	}
+
+	///////////
+	.Project-img-width {
+		min-width: 1040px;
+		height: 500px;
+		margin: 0 auto;
+	}
+
+	.Project-img-cover {
+		max-width: 1040px;
+	}
+
+	.Project-id-1 {
+		background: url('../images/detail/desktop/image-manage-hero@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-id-2 {
+		background: url('../images/detail/desktop/image-bookmark-hero@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-id-3 {
+		background: url('../images/detail/desktop/image-insure-hero@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-id-4 {
+		background: url('../images/detail/desktop/image-fylo-hero@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	/////////////////////////////
+
+	.Project-prev-width {
+		min-width: 635px;
+		height: 400px;
+	}
+
+	.Project-prev-1 {
+		background: url('../images/detail/desktop/image-manage-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-1-second {
+		background: url('../images/detail/desktop/image-manage-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	/////////////////////
+	.Project-prev-2 {
+		background: url('../images/detail/desktop/image-bookmark-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-2-second {
+		background: url('../images/detail/desktop/image-bookmark-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	//////////////////
+	.Project-prev-3 {
+		background: url('../images/detail/desktop/image-insure-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-3-second {
+		background: url('../images/detail/desktop/image-insure-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	////////////
+	.Project-prev-4 {
+		background: url('../images/detail/desktop/image-fylo-preview-1@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-prev-4-second {
+		background: url('../images/detail/desktop/image-fylo-preview-2@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	////////
+}
