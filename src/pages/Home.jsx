@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../components/ColorButton';
+import ColorButton from '../components/ColorButton';
 import '../styles/Home.scss';
 import PlainButton from '../components/PlainButton';
 import Contact from '../components/Contact';
@@ -9,8 +9,8 @@ import Footer from '../components/Footer';
 function Home() {
 	return (
 		<>
-			<div className='Container'>
-				<div className='Wrapper'>
+			<div className="Container">
+				<div className="Wrapper">
 					<Nav />
 					<div className="Home-container">
 						<div className="Home-grid">
@@ -19,7 +19,7 @@ function Home() {
 								<h1 className="Main-text">
 									Hey, I’m Juliana Ifionu and I love building beautiful websites
 								</h1>
-								<Button text={'About Me'} />
+								<ColorButton text={'About Me'} icon={true} />
 							</div>
 						</div>
 						<div className="About-outer-grid">

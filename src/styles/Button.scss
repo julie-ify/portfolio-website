@@ -27,7 +27,7 @@
 }
 
 .Plain-button-wrap {
-	width: 202px;
+	max-width: 202px;
 	height: 48px;
 	flex-shrink: 0;
 	outline: 0;
@@ -49,7 +49,6 @@
 .Color-button-text,
 .Plain-button-text,
 .Project-button-text {
-	// width: 152px;
 	text-align: center;
 	font-family: 'Public Sans', sans-serif;
 	font-size: 12px;
@@ -78,4 +77,8 @@
 	&:disabled {
 		background-color: $grayish-dark-blue;
 	}
+}
+
+.Color-button-text {
+	margin: 0 auto;
 }

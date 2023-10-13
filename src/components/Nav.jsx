@@ -17,7 +17,7 @@ function Nav() {
 						<a href="/portfolio">PORTFOLIO</a>
 					</li>
 					<li>
-						<a href="/contact">CONTACT ME</a>
+						<a href="/contact-me">CONTACT ME</a>
 					</li>
 				</ul>
 				<img src={HamburgerMenu} className="Nav-hamburger" alt="Hamburger" />

@@ -37,3 +37,7 @@ a {
 a:hover {
 	color: #5fb4a2;
 }
+
+.Contact-btn-text a:hover {
+color: #fafafa;
+}

@@ -21,7 +21,7 @@ function Footer() {
 								<a href="/portfolio">PORTFOLIO</a>
 							</li>
 							<li>
-								<a href="/contact">CONTACT ME</a>
+								<a href="/contact-me">CONTACT ME</a>
 							</li>
 						</ul>
 					</div>

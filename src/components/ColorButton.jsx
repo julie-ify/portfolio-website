@@ -27,6 +27,7 @@ function ColorButton({ text }) {
 					className="icon"
 				/>
 			</svg>
+
 			<span className="Color-button-text">{text}</span>
 		</button>
 	);
