@@ -5,9 +5,15 @@ import Footer from '../components/Footer';
 import GithubLogo from '../images/icons/github-black.svg';
 import TwitterLogo from '../images/icons/twitter-black.svg';
 import LinkedInLogo from '../images/icons/linkedin-black.svg';
-import ColorButton from '../components/ColorButton';
+import { useNavigate } from 'react-router-dom';
 
 function ContactMe() {
+	const navigate = useNavigate()
+
+	const submitHandler = (e) => {
+		e.preventDefault()
+		navigate('/success')
+	}
 	return (
 		<>
 			<div className="Container">
@@ -63,7 +69,7 @@ function ContactMe() {
 					</div>
 
 					<div className="Form-wrapper">
-						<form className="Form">
+						<form className="Form" onSubmit={submitHandler}>
 							<div>
 								<h1 className="Main-text">Contact Me</h1>
 							</div>
