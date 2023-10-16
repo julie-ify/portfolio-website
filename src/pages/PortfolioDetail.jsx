@@ -9,7 +9,7 @@ import ArrowLeft from '../images/icons/arrow-left.svg';
 import ArrowRight from '../images/icons/arrow-right.svg';
 import Contact from '../components/Contact';
 
-function PortfolioDetail() {
+function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 	const { slug } = useParams();
 	const slugs = ['manage', 'bookmark', 'flyo', 'insure'];
 	const portfolio = slugs.includes(slug);
@@ -23,9 +23,9 @@ function PortfolioDetail() {
 				<>
 					<div className="Container">
 						<div className="Wrapper">
-							<Nav />
+							<Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
 							<div className="Project-outer-grid">
-								<div className='Project-img-cover'>
+								<div className="Project-img-cover">
 									<div
 										className={`Project-id-${project.id} Project-img-width`}
 									></div>

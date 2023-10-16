@@ -5,12 +5,12 @@ import Contact from '../components/Contact';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
-function PortfolioIndex() {
+function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 	return (
 		<>
 			<div className="Container">
 				<div className="Wrapper">
-					<Nav />
+					<Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
 					<div className="Portfolio-container">
 						<div className="Portfolio-outer-grid">
 							<div className="Project-1"></div>

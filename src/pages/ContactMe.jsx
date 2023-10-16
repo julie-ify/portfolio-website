@@ -7,7 +7,7 @@ import TwitterLogo from '../images/icons/twitter-black.svg';
 import LinkedInLogo from '../images/icons/linkedin-black.svg';
 import { useNavigate } from 'react-router-dom';
 
-function ContactMe() {
+function ContactMe({ isMenuOpen, toggleMenu }) {
 	const [formdata, setFormData] = useState({
 		name: '',
 		email: '',
@@ -79,7 +79,7 @@ function ContactMe() {
 		<>
 			<div className="Container">
 				<div className="Wrapper">
-					<Nav />
+					<Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
 
 					<div className="Contact-me-wrapper">
 						<hr className="First" />

@@ -6,12 +6,12 @@ import Contact from '../components/Contact';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
-function Home() {
+function Home({toggleMenu, isMenuOpen}) {
 	return (
 		<>
 			<div className="Container">
 				<div className="Wrapper">
-					<Nav />
+					<Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen}/>
 					<div className="Home-container">
 						<div className="Home-grid">
 							<div className="Home-image"></div>

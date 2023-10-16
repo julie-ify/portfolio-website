@@ -1,8 +1,9 @@
 import React from 'react';
 import HamburgerMenu from '../images/icons/hamburger.svg';
+import closeBtnSvg from '../images/icons/close.svg';
 import '../styles/Nav.scss';
 
-function Nav() {
+function Nav({ toggleMenu, isMenuOpen }) {
 	return (
 		<div className="Nav-container">
 			<span className="Nav-logo">
@@ -20,7 +21,18 @@ function Nav() {
 						<a href="/contact-me">CONTACT ME</a>
 					</li>
 				</ul>
-				<img src={HamburgerMenu} className="Nav-hamburger" alt="Hamburger" />
+				<div onClick={toggleMenu}>
+					{!isMenuOpen && (
+						<img
+							src={HamburgerMenu}
+							className="Nav-hamburger"
+							alt="Hamburger"
+						/>
+					)}
+					{isMenuOpen && (
+						<img src={closeBtnSvg} className="Nav-hamburger" alt="Hamburger" />
+					)}
+				</div>
 			</div>
 		</div>
 	);

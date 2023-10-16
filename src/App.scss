@@ -6,6 +6,10 @@ $light-grey: #eaeaeb;
 $bright-red: #f43030;
 $light: #ffffff;
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .Container {
 	width: 100vw;
 }
@@ -47,6 +51,7 @@ $light: #ffffff;
 .Text-center {
 	text-align: center;
 }
+
 .Tex-left {
 	text-align: left;
 }
