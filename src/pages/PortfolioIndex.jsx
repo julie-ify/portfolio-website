@@ -34,7 +34,7 @@ function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 						</div>
 
 						<div className="Portfolio-outer-grid">
-						<div className='image-cover'>
+						<div className='image-cover Grid-order'>
 								<div className="Project-2 Project-image-cover"></div>
 							</div>
 							<div className="Portfolio-inner-grid">
@@ -74,7 +74,7 @@ function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 						</div>
 
 						<div className="Portfolio-outer-grid">
-						<div className='image-cover'>
+						<div className='image-cover Grid-order'>
 								<div className="Project-4 Project-image-cover"></div>
 							</div>
 							<div className="Portfolio-inner-grid">

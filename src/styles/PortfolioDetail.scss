@@ -94,6 +94,7 @@
 }
 
 .Select-project {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -114,13 +115,16 @@
 	opacity: 0.5;
 }
 
+.Select-project-border {
+	border-right: 1px solid rgb(51, 50, 61, 0.15);
+}
+
 .Previous-project {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 	align-items: flex-start;
-	border-right: 1px solid rgb(51, 50, 61, 0.15);
-	padding: 24px 42px 24px 0;
+	padding: 24px 0;
 }
 
 .Next-project {
@@ -150,7 +154,7 @@
 }
 
 .Project-id-1 {
-	background: url('../images/detail/mobile/image-manage-hero@2x.jpg'), no-repeat;
+	background: url('../images/detail/desktop/sss-hero.png'), no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -182,15 +186,13 @@
 }
 
 .Project-prev-1 {
-	background: url('../images/detail/mobile/image-manage-preview-1@2x.jpg'),
-		no-repeat;
+	background: url('../images/detail/desktop/sss-preview-1.png'), no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
 .Project-prev-1-second {
-	background: url('../images/detail/mobile/image-manage-preview-2@2x.jpg'),
-		no-repeat;
+	background: url('../images/detail/desktop/sss-preview-2.png'), no-repeat;
 	background-position: center;
 	background-size: cover;
 }
@@ -239,7 +241,6 @@
 	background-position: center;
 	background-size: cover;
 }
-////////
 
 @media (min-width: 768px) {
 	.Project-outer-grid {
@@ -334,6 +335,42 @@
 		gap: 28px;
 	}
 
+	.Select-project {
+		margin-bottom: 80px;
+	}
+
+	.Select-project-border {
+		border-right: 1px solid rgb(51, 50, 61, 0.15);
+	}
+	
+	.Previous-project {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 32px;
+		align-items: center;
+		padding: 24px 0;
+	}
+	
+	.Next-project {
+		display: flex;
+		flex-direction: row;
+		gap: 32px;
+		align-items: center;
+		justify-content: center;
+		padding: 24px 0;
+	}
+
+	.Next-arrow {
+		order: 2;
+	}
+	
+	.Next-arrow,
+	.Previous-arrow {
+		color: $grayish-dark-blue;
+	}
+	
+
 	/////////////
 
 	.Project-img-width {
@@ -348,8 +385,7 @@
 	}
 
 	.Project-id-1 {
-		background: url('../images/detail/tablet/image-manage-hero@2x.jpg'),
-			no-repeat;
+		background: url('../images/detail/desktop/sss-hero.png'), no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
@@ -384,15 +420,13 @@
 	/////////////////////////////
 
 	.Project-prev-1 {
-		background: url('../images/detail/tablet/image-manage-preview-1@2x.jpg'),
-			no-repeat;
+		background: url('../images/detail/desktop/sss-preview-1.png'), no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.Project-prev-1-second {
-		background: url('../images/detail/tablet/image-manage-preview-2@2x.jpg'),
-			no-repeat;
+		background: url('../images/detail/desktop/sss-preview-2.png'), no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
@@ -441,7 +475,6 @@
 		background-position: center;
 		background-size: cover;
 	}
-	////////
 }
 
 @media (min-width: 1110px) {
@@ -450,9 +483,9 @@
 		flex-direction: column;
 		margin-bottom: 100px;
 		align-items: center;
-		gap: 52px;
+		gap: 115px;
 		margin-bottom: 70px;
-		max-width: 1030px;
+		max-width: 1110px;
 	}
 
 	.Project-inner-grid {
@@ -539,6 +572,10 @@
 		gap: 28px;
 	}
 
+	.Select-project {
+		margin-bottom: 115px;
+	}
+
 	///////////
 	.Project-img-width {
 		min-width: 1040px;
@@ -548,11 +585,11 @@
 
 	.Project-img-cover {
 		max-width: 1040px;
+		margin: 0 auto;
 	}
 
 	.Project-id-1 {
-		background: url('../images/detail/desktop/image-manage-hero@2x.jpg'),
-			no-repeat;
+		background: url('../images/detail/desktop/sss-hero.png'), no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
@@ -586,15 +623,13 @@
 	}
 
 	.Project-prev-1 {
-		background: url('../images/detail/desktop/image-manage-preview-1@2x.jpg'),
-			no-repeat;
+		background: url('../images/detail/desktop/sss-preview-1.png'), no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.Project-prev-1-second {
-		background: url('../images/detail/desktop/image-manage-preview-2@2x.jpg'),
-			no-repeat;
+		background: url('../images/detail/desktop/sss-preview-2.png'), no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
@@ -643,5 +678,4 @@
 		background-position: center;
 		background-size: cover;
 	}
-	////////
 }
