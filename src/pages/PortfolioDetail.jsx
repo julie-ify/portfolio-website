@@ -90,7 +90,7 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 							</div>
 							<div className="Select-project">
 								<div className="Previous-project">
-									<div>
+									<div className='Previous-arrow'>
 										<img src={ArrowLeft} alt="" />
 									</div>
 									<div className="Project-sub-text-wrap">
@@ -100,13 +100,13 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 								</div>
 
 								<div className="Next-project">
-									<div>
+									<div className='Next-arrow'>
 										<img src={ArrowRight} alt="" />
 									</div>
 									<div className="Project-sub-text-wrap">
 										<h1 className="Sub-text">{project.nextProject}</h1>
 									</div>
-									<p className="Select-project-text">Previous Project</p>
+									<p className="Select-project-text">Next Project</p>
 								</div>
 							</div>
 							<Contact />

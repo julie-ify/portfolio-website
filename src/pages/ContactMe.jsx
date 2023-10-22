@@ -37,21 +37,21 @@ function ContactMe({ isMenuOpen, toggleMenu }) {
 		e.preventDefault();
 		const { name, email, message } = formdata;
 
-		if (!name) {
+		if (!name.trim()) {
 			return setError({
 				...error,
 				nameError: 'This field is required',
 				emailError: '',
 				messageError: '',
 			});
-		} else if (!email) {
+		} else if (!email.trim()) {
 			return setError({
 				...error,
 				nameError: '',
 				emailError: 'This field is required',
 				messageError: '',
 			});
-		} else if (!message) {
+		} else if (!message.trim()) {
 			return setError({
 				...error,
 				nameError: '',

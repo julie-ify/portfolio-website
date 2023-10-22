@@ -13,7 +13,10 @@ function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 					<Nav toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
 					<div className="Portfolio-container">
 						<div className="Portfolio-outer-grid">
-							<div className="Project-1"></div>
+							<div className='image-cover'>
+								<div className="Project-1 Project-image-cover"></div>
+							</div>
+
 							<div className="Portfolio-inner-grid">
 								<hr className="First" />
 								<div className="Portfolio-main-text-wrap">
@@ -31,7 +34,9 @@ function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 						</div>
 
 						<div className="Portfolio-outer-grid">
-							<div className="Project-2"></div>
+						<div className='image-cover'>
+								<div className="Project-2 Project-image-cover"></div>
+							</div>
 							<div className="Portfolio-inner-grid">
 								<hr className="First" />
 								<div className="Portfolio-main-text-wrap">
@@ -49,7 +54,9 @@ function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 						</div>
 
 						<div className="Portfolio-outer-grid">
-							<div className="Project-3"></div>
+						<div className='image-cover'>
+								<div className="Project-3 Project-image-cover"></div>
+							</div>
 							<div className="Portfolio-inner-grid">
 								<hr className="First" />
 								<div className="Portfolio-main-text-wrap">
@@ -67,7 +74,9 @@ function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 						</div>
 
 						<div className="Portfolio-outer-grid">
-							<div className="Project-4"></div>
+						<div className='image-cover'>
+								<div className="Project-4 Project-image-cover"></div>
+							</div>
 							<div className="Portfolio-inner-grid">
 								<hr className="First" />
 								<div className="Portfolio-main-text-wrap">

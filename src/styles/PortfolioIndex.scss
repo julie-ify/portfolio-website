@@ -3,7 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 72px;
-	gap: 24px;
+	gap: 44px;
 }
 
 .Portfolio-inner-grid {
@@ -12,13 +12,21 @@
 	gap: 24px;
 }
 
+.image-cover {
+	max-width: 311px;
+	height: 300px;
+}
+
+.Project-image-cover {
+	max-width: 311px;
+	height: 300px;
+}
+
 .Project-1 {
-	background: url('../images/portfolio/mobile/image-portfolio-manage@2x.jpg'),
-		no-repeat;
+	background: url('../images/portfolio/desktop/image-portfolio-soundsavvy@2x.png'), no-repeat;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	max-width: 375px;
-	height: 310px;
 }
 
 .Project-2 {
@@ -26,8 +34,6 @@
 		no-repeat;
 	background-position: center;
 	background-size: cover;
-	max-width: 375px;
-	height: 310px;
 }
 
 .Project-3 {
@@ -35,8 +41,6 @@
 		no-repeat;
 	background-position: center;
 	background-size: cover;
-	max-width: 375px;
-	height: 310px;
 }
 
 .Project-4 {
@@ -44,8 +48,6 @@
 		no-repeat;
 	background-position: center;
 	background-size: cover;
-	max-width: 375px;
-	height: 310px;
 }
 
 .Portfolio-main-text-wrap {
@@ -72,7 +74,6 @@
 	background: $grayish-dark-blue;
 }
 
-
 @media (min-width: 768px) {
 	.Portfolio-outer-grid {
 		display: flex;
@@ -90,14 +91,23 @@
 		margin-top: 0;
 	}
 
+	.image-cover {
+		max-width: 339px;
+		height: 314px;
+	}
+	
+	.Project-image-cover {
+		width: 339px;
+		height: 314px;
+	}
+
 	.Project-1 {
-		background: url('../images/portfolio/tablet/image-portfolio-manage@2x.jpg'),
-			no-repeat;
+		background: url('../images/portfolio/desktop/image-portfolio-soundsavvy@2x.png'), no-repeat;
+		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
-		width: 375px;
-		height: 275px;
 	}
+
 	.Project-2 {
 		background: url('../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg'),
 			no-repeat;
@@ -122,7 +132,7 @@
 		background-size: cover;
 		width: 375px;
 		height: 275px;
-		order: 2
+		order: 2;
 	}
 
 	.Portfolio-Paragraph-text {
@@ -138,10 +148,12 @@
 	.Portfolio-outer-grid {
 		display: flex;
 		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
 		margin-bottom: 80px;
 		gap: 125px;
 		height: 500px;
-		width: 100%;
+		max-width: 100%;
 	}
 
 	.Portfolio-inner-grid {
@@ -151,23 +163,31 @@
 		height: 500px;
 	}
 
-	.Project-1 {
-		background: url('../images/portfolio/desktop/image-portfolio-manage@2x.jpg'),
-			no-repeat;
-		background-position: center;
-		background-size: cover;
+	.image-cover {
+		min-width: 540px;
+	}
+
+	.Project-image-cover {
 		min-width: 540px;
 		height: 500px;
 	}
+
+	.Project-1 {
+		background: url('../images/portfolio/desktop/image-portfolio-soundsavvy@2x.png'),
+			no-repeat;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
 	.Project-2 {
 		background: url('../images/portfolio/tablet/image-portfolio-bookmark@2x.jpg'),
 			no-repeat;
 		background-position: center;
 		background-size: cover;
-		min-width: 540px;
-		height: 500px;
 		order: 2;
 	}
+
 	.Project-3 {
 		background: url('../images/portfolio/tablet/image-portfolio-insure@2x.jpg'),
 			no-repeat;
@@ -183,7 +203,7 @@
 		background-size: cover;
 		min-width: 540px;
 		height: 500px;
-		order: 2
+		order: 2;
 	}
 
 	.Paragraph-text {
@@ -197,4 +217,6 @@
 	.Portfolio-inner-grid .Second {
 		margin-top: 103px;
 	}
+
+
 }

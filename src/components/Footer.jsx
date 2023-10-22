@@ -46,7 +46,7 @@ function Footer() {
 						</li>
 						<li>
 							<a
-								href="https://www.linkedin.com/in/julianaifionu/"
+								href="https://twitter.com/juliana_ifionu"
 								target="_blank"
 								rel="noreferrer"
 							>

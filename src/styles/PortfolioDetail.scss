@@ -103,13 +103,38 @@
 	margin-bottom: 64px;
 }
 
+.Select-project-text {
+	color: $grayish-dark-blue;
+	text-align: right;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	opacity: 0.5;
+}
+
 .Previous-project {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: flex-start;
 	border-right: 1px solid rgb(51, 50, 61, 0.15);
 	padding: 24px 42px 24px 0;
 }
 
 .Next-project {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: flex-end;
 	padding: 24px 0;
+	align-self: flex-end;
+}
+
+.Next-arrow,
+.Previous-arrow {
+	color: $grayish-dark-blue;
 }
 
 ////////////////////////////////////
