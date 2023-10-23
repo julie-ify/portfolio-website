@@ -18,7 +18,7 @@ function Home({ toggleMenu, isMenuOpen }) {
 							<div className="Home-image"></div>
 							<div className="Home-hero-grid">
 								<h1 className="Main-text">
-									Hey, I’m Juliana Ifionu and I love building beautiful websites
+									Hey, I’m Juliana Ifionu and I'm a full-stack developer
 								</h1>
 								<ColorButton text={'Contact me'} icon={true} />
 							</div>
