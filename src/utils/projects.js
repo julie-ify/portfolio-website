@@ -36,7 +36,7 @@ const projectsArray = [
 		skills: ['Interaction Design', 'Front End Development'],
 	},
 	{
-		id: 1,
+		id: 4,
 		title: 'Flyo',
 		description:
 			'This project 4 required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.',
@@ -51,7 +51,6 @@ const projectsArray = [
 
 export const findProject = (projectName) => {
 	const project = projectsArray.find((project) => {
-		console.log(projectName, project.title);
 		return project.title === projectName;
 	});
 

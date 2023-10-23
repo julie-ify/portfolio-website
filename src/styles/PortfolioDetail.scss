@@ -97,7 +97,6 @@
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-between;
 	border-top: 1px solid rgb(51, 50, 61, 0.15);
 	border-bottom: 1px solid rgb(51, 50, 61, 0.15);
@@ -139,6 +138,25 @@
 .Next-arrow,
 .Previous-arrow {
 	color: $grayish-dark-blue;
+	animation: arrow-move 2s infinite 2s;
+	padding: 0 2px;
+	width: 8px;
+}
+
+@keyframes arrow-move {
+	0% {
+		padding: 0;
+	}
+
+	50% {
+		padding: 0 2px;
+		color: $cyan;
+	}
+
+	100% {
+		padding: 0;
+		color: $cyan;
+	}
 }
 
 ////////////////////////////////////
@@ -242,6 +260,19 @@
 	background-size: cover;
 }
 
+@media (max-width: 350px) {
+	.Select-project {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.Select-project-text {
+		font-size: 10px;
+		line-height: 18px;
+	}
+}
+
 @media (min-width: 768px) {
 	.Project-outer-grid {
 		display: flex;
@@ -342,7 +373,7 @@
 	.Select-project-border {
 		border-right: 1px solid rgb(51, 50, 61, 0.15);
 	}
-	
+
 	.Previous-project {
 		display: flex;
 		flex-direction: row;
@@ -351,7 +382,7 @@
 		align-items: center;
 		padding: 24px 0;
 	}
-	
+
 	.Next-project {
 		display: flex;
 		flex-direction: row;
@@ -364,12 +395,11 @@
 	.Next-arrow {
 		order: 2;
 	}
-	
+
 	.Next-arrow,
 	.Previous-arrow {
 		color: $grayish-dark-blue;
 	}
-	
 
 	/////////////
 

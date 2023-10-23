@@ -56,6 +56,12 @@ $light: #ffffff;
 	text-align: left;
 }
 
+@media (max-width: 350px) {
+	.Sub-text {
+		font-size: 25px;
+	}
+}
+
 @media (min-width: 768px) {
 	.Wrapper {
 		max-width: 768px;

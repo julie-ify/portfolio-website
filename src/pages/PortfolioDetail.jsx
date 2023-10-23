@@ -91,7 +91,11 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 							<div className="Select-project">
 								<div className="Previous-project">
 									<div className="Previous-arrow">
-										<img src={ArrowLeft} alt="" />
+										<a
+											href={`/portfolio/${project.previousProject.toLowerCase()}`}
+										>
+											<img src={ArrowLeft} alt="" />
+										</a>
 									</div>
 									<div className="Project-sub-text-wrap">
 										<h1 className="Sub-text">{project.previousProject}</h1>
@@ -103,7 +107,9 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 
 								<div className="Next-project">
 									<div className="Next-arrow">
-										<img src={ArrowRight} alt="" />
+										<a href={`/portfolio/${project.nextProject.toLowerCase()}`}>
+											<img src={ArrowRight} alt="" className='arrow-move'/>
+										</a>
 									</div>
 									<div className="Project-sub-text-wrap">
 										<h1 className="Sub-text">{project.nextProject}</h1>
