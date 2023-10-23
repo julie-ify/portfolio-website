@@ -11,8 +11,8 @@ import Contact from '../components/Contact';
 
 function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 	const { slug } = useParams();
-	const slugs = ['manage', 'bookmark', 'flyo', 'insure'];
-	const portfolio = slugs.includes(slug);
+	const slugs = ['soundsavvyshop', 'bookmark', 'flyo', 'insure'];
+	const portfolio = slugs.includes(slug.toLowerCase());
 	const titleNameFormat = slug.charAt(0).toUpperCase() + slug.slice(1);
 	const project = findProject(titleNameFormat);
 
@@ -59,7 +59,13 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 													</div>
 													<button className={`Project-button-wrap btn-order`}>
 														<span className="Project-button-text">
-															<a href={`/portfolio`}>Visit Website</a>
+															<a
+																href={`https://soundsavvyshop.netlify.app`}
+																target="_blank"
+																rel="noreferrer"
+															>
+																Visit Website
+															</a>
 														</span>
 													</button>
 												</div>
@@ -108,7 +114,7 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 								<div className="Next-project">
 									<div className="Next-arrow">
 										<a href={`/portfolio/${project.nextProject.toLowerCase()}`}>
-											<img src={ArrowRight} alt="" className='arrow-move'/>
+											<img src={ArrowRight} alt="" className="arrow-move" />
 										</a>
 									</div>
 									<div className="Project-sub-text-wrap">
