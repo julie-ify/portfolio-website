@@ -1,9 +1,11 @@
 import React from 'react';
 import '../styles/Button.scss';
+import { useNavigate } from 'react-router-dom';
 
 function ColorButton({ text }) {
+	const navigate = useNavigate()
 	return (
-		<button className={`Color-button-wrap`}>
+		<button className={`Color-button-wrap`} onClick={() => {navigate('/contact-me')}}>
 			<svg
 				className="Button-arrow-down"
 				xmlns="http://www.w3.org/2000/svg"
