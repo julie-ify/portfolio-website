@@ -24,7 +24,7 @@ function PortfolioIndex({ isMenuOpen, toggleMenu }) {
 					<p className="Portfolio-Paragraph-text">{project.description}</p>
 					<PlainButton
 						text={'View Project'}
-						slug={project.title.toLowerCase()}
+						slug={project.slug.toLowerCase()}
 					/>
 					<hr className="Second" />
 				</div>

@@ -11,10 +11,12 @@ import Contact from '../components/Contact';
 
 function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 	const { slug } = useParams();
-	const slugs = ['soundsavvyshop', 'bookmark', 'flyo', 'insure'];
-	const portfolio = slugs.includes(slug.toLowerCase());
-	const titleNameFormat = slug.charAt(0).toUpperCase() + slug.slice(1);
+	const slugs = ['soundsavvyshop', 'jxpense', 'flyo', 'insure'];
+	const portfolio = slugs.includes(slug);
+	const titleNameFormat = slug
 	const project = findProject(titleNameFormat);
+
+	console.log(project, portfolio)
 
 	return (
 		<>
