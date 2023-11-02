@@ -260,15 +260,16 @@
 	background-size: cover;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
 	.Select-project {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 
 	.Select-project-text {
-		font-size: 10px;
+		font-size: 11px;
 		line-height: 18px;
 	}
 }

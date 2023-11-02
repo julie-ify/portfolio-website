@@ -20,7 +20,7 @@ export const projectsArray = [
 			'JXpense is a dynamic Ruby on Rails mobile web-based application designed to effortlessly manage your expenses and income. With its intuitive interface and no-install-required convenience, JXpense allows users to effortlessly track their financial activities in an efficient and user-friendly manner.',
 		background:
 			'JXpense Empowers users with control over their financial records, JXpense offers the flexibility to create custom categories and itemize products within these categories, providing a structured and organized approach to expense management. Users can establish an initial budget and have the flexibility to adjust and increase their budget allocation as needed, ensuring a personalized and adaptable financial tracking experience.',
-		previousProject: 'Soundsavvyshop',
+		previousProject: 'Soundsavvy',
 		nextProject: 'Insure',
 		technologies: [
 			'Ruby on Rails',
