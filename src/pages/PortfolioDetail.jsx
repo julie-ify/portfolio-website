@@ -5,8 +5,6 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import { findProject } from '../utils/projects';
 import '../styles/PortfolioDetail.scss';
-import ArrowLeft from '../images/icons/arrow-left.svg';
-import ArrowRight from '../images/icons/arrow-right.svg';
 import Contact from '../components/Contact';
 
 function PortfolioDetail({ isMenuOpen, toggleMenu }) {
