@@ -1,0 +1,218 @@
+@import '.././App.scss';
+
+.Portfolio-outer-grid {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 72px;
+	gap: 44px;
+}
+
+.Portfolio-inner-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.image-cover {
+	max-width: 311px;
+	height: 300px;
+}
+
+.Project-image-cover {
+	max-width: 311px;
+	height: 300px;
+}
+
+.Project-1 {
+	background: url('../images/portfolio/desktop/sss-portfolio.png'),
+		no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.Project-2 {
+	background: url('../images/portfolio/desktop/budget-home-mockup.png'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-3 {
+	background: url('../images/portfolio/mobile/image-portfolio-insure@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Project-4 {
+	background: url('../images/portfolio/mobile/image-portfolio-fylo@2x.jpg'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.Portfolio-main-text-wrap {
+	margin-top: 0;
+}
+
+.Portfolio-Paragraph-text {
+	max-width: 311px;
+	color: $grayish-dark-blue;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	opacity: 0.8;
+}
+
+.Portfolio-inner-grid .First,
+.Portfolio-inner-grid .Second {
+	width: 100%;
+	height: 1px;
+	flex-shrink: 0;
+	opacity: 0.15;
+	background: $grayish-dark-blue;
+}
+
+@media (min-width: 768px) {
+	.Portfolio-outer-grid {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 100px;
+		align-items: center;
+		gap: 69px;
+		height: 450px;
+		margin-bottom: 70px;
+	}
+
+	.Portfolio-inner-grid {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.image-cover {
+		max-width: 339px;
+		height: 288px;
+	}
+
+	.Project-image-cover {
+		width: 339px;
+		height: 288px;
+	}
+
+	.Grid-order {
+		order: 2;
+	}
+
+	.Project-1 {
+		background: url('../images/portfolio/desktop/sss-portfolio.png'),
+			no-repeat;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-2 {
+		background: url('../images/portfolio/desktop/budget-home-mockup.png'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-3 {
+		background: url('../images/portfolio/tablet/image-portfolio-insure@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-4 {
+		background: url('../images/portfolio/tablet/image-portfolio-fylo@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Portfolio-Paragraph-text {
+		max-width: 339px;
+	}
+
+	.Portfolio-inner-grid .Second {
+		margin-top: 40px;
+	}
+}
+
+@media (min-width: 1110px) {
+	.Portfolio-outer-grid {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+		margin-bottom: 100px;
+		gap: 125px;
+		height: 500px;
+		max-width: 100%;
+	}
+
+	.Portfolio-inner-grid {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+		height: 500px;
+	}
+
+	.image-cover {
+		min-width: 540px;
+	}
+
+	.Project-image-cover {
+		min-width: 540px;
+		height: 500px;
+	}
+
+	.Project-1 {
+		background: url('../images/portfolio/desktop/sss-portfolio.png'),
+			no-repeat;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.Project-2 {
+		background: url('../images/portfolio/desktop/budget-home-mockup.png'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+		order: 2;
+	}
+
+	.Project-3 {
+		background: url('../images/portfolio/tablet/image-portfolio-insure@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.Project-4 {
+		background: url('../images/portfolio/tablet/image-portfolio-fylo@2x.jpg'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+		order: 2;
+	}
+
+	.Paragraph-text {
+		max-width: 350px;
+	}
+
+	.Portfolio-inner-grid .First {
+		margin-bottom: 59px;
+	}
+
+	.Portfolio-inner-grid .Second {
+		margin-top: 103px;
+	}
+}

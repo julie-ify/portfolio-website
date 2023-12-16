@@ -1,0 +1,284 @@
+@import '../App.scss';
+
+.Home-container {
+	width: 100%;
+}
+
+.Home-grid {
+	margin-bottom: 100px;
+}
+
+.Home-image {
+	background: url('../images/homepage/desktop/homepage-hero.png'),
+		no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 375px;
+	height: 271px;
+}
+
+.Home-hero-grid {
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.About-outer-grid {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.About-inner-grid {
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.profile-image {
+	background: url('../images/homepage/mobile/profile.jpg'), no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 375px;
+	height: 310px;
+}
+
+.Main-text-wrap {
+	margin-top: 32px;
+}
+
+.About-inner-grid .Paragraph-text {
+	max-width: 500px;
+	color: $grayish-dark-blue;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	opacity: 0.8;
+	margin: 28px 0 24px;
+}
+
+.About-inner-grid .First,
+.About-inner-grid .Second {
+	width: 100%;
+	height: 1px;
+	flex-shrink: 0;
+	opacity: 0.15;
+	background: $grayish-dark-blue;
+}
+
+.About-inner-grid .Second {
+	margin-top: 51px;
+}
+
+.Contact-grid {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.Contact-btn {
+	background-color: $bg-light-grey;
+	color: $grayish-dark-blue;
+	width: 162px;
+	height: 48px;
+	flex-shrink: 0;
+	outline: 0;
+	border: 1px solid $grayish-dark-blue;
+}
+
+.Contact-btn:hover {
+	background-color: $grayish-dark-blue;
+	color: $bg-light-grey;
+	cursor: pointer;
+}
+
+.Contact-btn-text {
+	font-family: 'Public Sans', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.Contact-hr {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.Home-grid {
+		margin-bottom: 100px;
+		position: relative;
+	}
+
+	.Home-image {
+		background: url('../images/homepage/desktop/homepage-hero.png'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+		max-width: 768px;
+		height: 600px;
+	}
+
+	.Home-hero-grid {
+		padding-top: 56px;
+		padding-bottom: 0;
+		position: absolute;
+		bottom: -1px;
+		left: -1px;
+		margin-top: 0;
+		background-color: $bg-light-grey;
+		width: 514px;
+		z-index: 2;
+		gap: 48px;
+	}
+
+	.About-outer-grid {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 100px;
+		align-items: center;
+		gap: 52px;
+		height: 600px;
+	}
+
+	.About-inner-grid {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.profile-image {
+		background: url('../images/homepage/mobile/profile.jpg'), no-repeat;
+		background-position: center;
+		background-size: cover;
+		width: 375px;
+		height: 300px;
+	}
+
+	.Main-text-wrap {
+		margin-top: 45px;
+	}
+
+	.Paragraph-text {
+		max-width: 339px;
+	}
+
+	.About-inner-grid .Second {
+		margin-top: 40px;
+	}
+
+	.Contact-grid {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 40px;
+	}
+
+	.Contact-hr {
+		display: block;
+		width: 113px;
+		height: 1px;
+		flex-shrink: 0;
+		opacity: 0.15;
+		background: $grayish-dark-blue;
+	}
+}
+
+@media (min-width: 1110px) {
+	.Home-grid {
+		margin-bottom: 100px;
+		position: relative;
+		height: 550px;
+	}
+
+	.Home-image {
+		background: url('../images/homepage/desktop/homepage-hero.png'),
+			no-repeat;
+		background-position: center;
+		background-size: cover;
+		max-width: 1110px;
+		height: 550px;
+	}
+
+	.Home-hero-grid {
+		padding-top: 56px;
+		padding-bottom: 0;
+		position: absolute;
+		bottom: -1px;
+		left: -1px;
+		margin-top: 0;
+		background-color: $bg-light-grey;
+		width: 400px;
+		z-index: 2;
+		gap: 53px;
+	}
+
+	.About-outer-grid {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 100px;
+		gap: 130px;
+		height: 600px;
+		width: 100%;
+	}
+
+	.About-inner-grid {
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+	.profile-image {
+		background: url('../images/homepage/mobile/profile.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		min-width: 500px;
+		height: 530px;
+	}
+
+	.Main-text-wrap {
+		margin-top: 45px;
+	}
+
+	.Paragraph-text {
+		max-width: 350px;
+	}
+
+	.About-inner-grid .Second {
+		margin-top: 40px;
+	}
+
+	.Contact-grid {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: left;
+		gap: 40px;
+	}
+
+	.Contact-hr {
+		display: block;
+		width: 450px;
+		height: 1px;
+		flex-shrink: 0;
+		opacity: 0.15;
+		background: $grayish-dark-blue;
+	}
+}

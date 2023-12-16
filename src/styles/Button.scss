@@ -1,0 +1,89 @@
+@import '../App.scss';
+
+.Color-button-wrap {
+	max-width: 202px;
+	height: 48px;
+	flex-shrink: 0;
+	outline: 0;
+	border: 0;
+	display: flex;
+	align-items: center;
+	color: $light;
+	padding: 0;
+	background-color: $dark-blue;
+
+	&:hover {
+		background-color: $cyan;
+		cursor: pointer;
+	}
+
+	&:disabled {
+		background-color: $dark-blue;
+	}
+
+	&:hover svg .icon {
+		stroke: #fff;
+	}
+}
+
+.Plain-button-wrap {
+	max-width: 202px;
+	height: 48px;
+	flex-shrink: 0;
+	outline: 0;
+	padding: 0;
+	background-color: $bg-light-grey;
+	border: 1px solid $grayish-dark-blue;
+
+	&:hover {
+		background-color: $grayish-dark-blue;
+		color: $bg-light-grey;
+		cursor: pointer;
+	}
+
+	&:disabled {
+		background-color: $grayish-dark-blue;
+	}
+}
+
+.Color-button-text,
+.Plain-button-text,
+.Project-button-text {
+	text-align: center;
+	font-family: 'Public Sans', sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.Project-button-wrap {
+	width: 178px;
+	height: 48px;
+	flex-shrink: 0;
+	outline: 0;
+	padding: 0;
+	background-color: $bg-light-grey;
+	border: 1px solid $grayish-dark-blue;
+
+	&:hover {
+		background-color: $grayish-dark-blue;
+		color: $bg-light-grey;
+		cursor: pointer;
+	}
+
+	&:disabled {
+		background-color: $grayish-dark-blue;
+	}
+}
+
+.Color-button-text {
+	margin: 0 auto;
+}
