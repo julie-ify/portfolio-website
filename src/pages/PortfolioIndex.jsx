@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import { projectsArray } from '../utils/projects';
 
 function PortfolioIndex({ isMenuOpen, toggleMenu }) {
-	const portfolio = projectsArray.map((project) => {
+	const portfolio = projectsArray.slice(0, 2).map((project) => {
 		return (
 			<div className="Portfolio-outer-grid" key={project.id}>
 				<div

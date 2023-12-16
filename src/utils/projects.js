@@ -4,12 +4,12 @@ export const projectsArray = [
 		title: 'SoundSavvyShop',
 		slug: 'soundsavvyshop',
 		description:
-			'This project required me to build a fully responsive multi-page e-commerce application. Built with JavaScript, React, serverless Netlify function, Stripe, along SCSS',
+			'This is a dynamic and responsive e-commerce platform that revolutionizes the online shopping experience. Seamlessly crafted to empower users, it offers an intuitive interface enabling hassle-free product selection and cart management.',
 		background:
-			"This project was a challenge from Frontend Mentor. It's an application that enable users add/remove products from the cart, edit product quantities, receive form validations if fields are missed or incorrect during checkout, see correct checkout total, see order confirmation after after checking out with an order summary and make payment with stripe. The app keeps track of what's in the cart even after refreshing the browser.",
+			"SoundSavvyShop redefines e-commerce, offering a user-centric platform that simplifies the shopping experience. With an intuitive interface, users effortlessly add, remove, and adjust product quantities in their cart while receiving essential form validations during checkout. Real-time updates ensure accurate checkout totals, followed by a streamlined order confirmation and a comprehensive summary. Integrated with Stripe for secure payments, this innovative application's standout feature is its ability to retain cart items even after browser refresh, ensuring a seamless shopping journey and reflecting a modern, efficient, and enjoyable online shopping experience.",
 		previousProject: 'Flyo',
 		nextProject: 'JXpense',
-		technologies: ['JavaScript', 'React', ' Strip', 'Serverless function'],
+		technologies: ['JavaScript', 'React', ' Stripe', 'Serverless function'],
 		skills: ['Interaction Design', 'Front End Development'],
 	},
 	{
@@ -31,32 +31,7 @@ export const projectsArray = [
 		],
 		skills: ['Full-stack', 'UI design', 'Project management'],
 	},
-	{
-		id: 3,
-		title: 'Insure',
-		slug: 'insure',
-		description:
-			'This project 3 required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.',
-		background:
-			'This project 3 was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
-		previousProject: 'Bookmark',
-		nextProject: 'Flyo',
-		technologies: ['HTML', 'CSS', ' JS'],
-		skills: ['Interaction Design', 'Front End Development'],
-	},
-	{
-		id: 4,
-		title: 'Flyo',
-		slug: 'flyo',
-		description:
-			'This project 4 required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.',
-		background:
-			'This project 4 was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.',
-		previousProject: 'Insure',
-		nextProject: 'Manage',
-		technologies: ['HTML', 'CSS', ' JS'],
-		skills: ['Interaction Design', 'Front End Development'],
-	},
+	
 ];
 
 export const findProject = (projectName) => {

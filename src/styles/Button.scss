@@ -57,6 +57,11 @@
 	line-height: normal;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
 }
 
 .Project-button-wrap {

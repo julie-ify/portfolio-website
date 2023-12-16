@@ -11,7 +11,7 @@ import Contact from '../components/Contact';
 
 function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 	const { slug } = useParams();
-	const slugs = ['soundsavvyshop', 'jxpense', 'flyo', 'insure'];
+	const slugs = ['soundsavvyshop', 'jxpense'];
 	const portfolio = slugs.includes(slug);
 	const titleNameFormat = slug
 	const project = findProject(titleNameFormat);
@@ -93,35 +93,6 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 										<div
 											className={`Project-prev-${project.id}-second Project-prev-width`}
 										></div>
-									</div>
-								</div>
-							</div>
-							<div className="Select-project">
-								<div className="Previous-project">
-									<div className="Previous-arrow">
-										<a
-											href={`/portfolio/${project.previousProject.toLowerCase()}`}
-										>
-											<img src={ArrowLeft} alt="" />
-										</a>
-									</div>
-									<div className="Project-sub-text-wrap">
-										<h1 className="Sub-text">{project.previousProject}</h1>
-										<p className="Select-project-text">Previous Project</p>
-									</div>
-								</div>
-
-								<div className="Select-project-border"></div>
-
-								<div className="Next-project">
-									<div className="Next-arrow">
-										<a href={`/portfolio/${project.nextProject.toLowerCase()}`}>
-											<img src={ArrowRight} alt="" className="arrow-move" />
-										</a>
-									</div>
-									<div className="Project-sub-text-wrap">
-										<h1 className="Sub-text">{project.nextProject}</h1>
-										<p className="Select-project-text">Next Project</p>
 									</div>
 								</div>
 							</div>

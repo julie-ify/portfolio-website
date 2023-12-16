@@ -18,7 +18,7 @@ function Home({ toggleMenu, isMenuOpen }) {
 							<div className="Home-image"></div>
 							<div className="Home-hero-grid">
 								<h1 className="Main-text">
-									Hey, I’m Juliana Ifionu and I'm a full-stack developer
+									Hey, I’m Juliana Ifionu and I'm a Software Developer
 								</h1>
 								<ColorButton text={'Contact me'} icon={true} />
 							</div>
@@ -34,9 +34,9 @@ function Home({ toggleMenu, isMenuOpen }) {
 									<h1 className="Main-text">About Me</h1>
 								</div>
 								<p className="Paragraph-text">
-									I'm a full-stack developer with a strong focus on building
-									applications using a diverse tech stack, including Node.js,
-									Express, Ruby on Rails, React, Next.js, PostgreSQL, and
+									I'm a software developer with a strong focus on building
+									applications using a diverse tech stack, including Nodejs,
+									Expressjs, Ruby on Rails, Reactjs, Nextjs, PostgreSQL, and
 									MongoDB. My expertise lies in architecting APIs that power
 									seamless communication between different components of
 									applications. With a deep understanding of both frontend and
