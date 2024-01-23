@@ -89,12 +89,13 @@ function ContactMe({ isMenuOpen, toggleMenu }) {
 							</div>
 							<div className="Small-inner-grid">
 								<p className="Contact-Paragraph-text">
-									I would love to hear about what you’re working on and how I could
-									help. I’m currently looking for a new role and am open to a
-									wide range of opportunities. I’m a hard-working and positive
-									person who will always approach each task with a sense of
-									purpose and attention to detail. Please do feel free to check
-									out my online profiles below and get in touch using the form.
+									I would love to hear about what you’re working on and how I
+									could help. I’m currently looking for a new role and am open
+									to a wide range of opportunities. I’m a hard-working and
+									positive person who will always approach each task with a
+									sense of purpose and attention to detail. Please do feel free
+									to check out my online profiles below and get in touch using
+									the form.
 								</p>
 								<ul className="Footer-icons">
 									<li>
@@ -131,7 +132,7 @@ function ContactMe({ isMenuOpen, toggleMenu }) {
 					</div>
 
 					<div className="Form-wrapper">
-						<form className="Form" onSubmit={submitHandler}>
+						<form className="Form" onSubmit={submitHandler} netlify>
 							<div>
 								<div className="Form-main-text-wrap">
 									<h1 className="Main-text">Contact Me</h1>
