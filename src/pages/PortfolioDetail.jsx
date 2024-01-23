@@ -11,10 +11,8 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 	const { slug } = useParams();
 	const slugs = ['soundsavvyshop', 'jxpense'];
 	const portfolio = slugs.includes(slug);
-	const titleNameFormat = slug
+	const titleNameFormat = slug;
 	const project = findProject(titleNameFormat);
-
-	console.log(project, portfolio)
 
 	return (
 		<>
@@ -60,7 +58,7 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 													<button className={`Project-button-wrap btn-order`}>
 														<span className="Project-button-text">
 															<a
-																href={`https://soundsavvyshop.netlify.app`}
+																href={project.link}
 																target="_blank"
 																rel="noreferrer"
 															>

@@ -11,6 +11,7 @@ export const projectsArray = [
 		nextProject: 'JXpense',
 		technologies: ['JavaScript', 'React', ' Stripe', 'Serverless function'],
 		skills: ['Interaction Design', 'Front End Development'],
+		link: 'https://soundsavvyshop.netlify.app'
 	},
 	{
 		id: 2,
@@ -30,6 +31,7 @@ export const projectsArray = [
 			'Rspec',
 		],
 		skills: ['Full-stack', 'UI design', 'Project management'],
+		link: 'https://jxspense.onrender.com/'
 	},
 	
 ];

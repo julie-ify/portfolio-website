@@ -89,15 +89,12 @@ function ContactMe({ isMenuOpen, toggleMenu }) {
 							</div>
 							<div className="Small-inner-grid">
 								<p className="Contact-Paragraph-text">
-									I’d love to hear about what you’re working on and how I could
+									I would love to hear about what you’re working on and how I could
 									help. I’m currently looking for a new role and am open to a
-									wide range of opportunities. My preference would be to find a
-									position in a company in London. But I’m also happy to hear
-									about opportunites that don’t fit that description. I’m a
-									hard-working and positive person who will always approach each
-									task with a sense of purpose and attention to detail. Please
-									do feel free to check out my online profiles below and get in
-									touch using the form.
+									wide range of opportunities. I’m a hard-working and positive
+									person who will always approach each task with a sense of
+									purpose and attention to detail. Please do feel free to check
+									out my online profiles below and get in touch using the form.
 								</p>
 								<ul className="Footer-icons">
 									<li>
@@ -120,7 +117,7 @@ function ContactMe({ isMenuOpen, toggleMenu }) {
 									</li>
 									<li>
 										<a
-											href="https://www.linkedin.com/in/julianaifionu/"
+											href="https://twitter.com/juliana_ifionu"
 											target="_blank"
 											rel="noreferrer"
 										>
@@ -147,7 +144,7 @@ function ContactMe({ isMenuOpen, toggleMenu }) {
 										id="name"
 										type="text"
 										name="name"
-										placeholder="Jane Appleseed"
+										placeholder="Jane Doe"
 										onChange={onChangeHandler}
 										value={formdata.name}
 									/>
@@ -159,7 +156,7 @@ function ContactMe({ isMenuOpen, toggleMenu }) {
 										id="email"
 										name="email"
 										type="text"
-										placeholder="email@example.com"
+										placeholder="abc@example.com"
 										onChange={onChangeHandler}
 										value={formdata.email}
 									/>
