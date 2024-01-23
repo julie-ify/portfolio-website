@@ -14,7 +14,8 @@ function FormSuccess() {
 						<h1 className="Main-text">Thank You!</h1>
 					</div>
 					<p className="Portfolio-Paragraph-text">
-						Rest assure I receive you message. will get back as soon as possible
+						Rest assured, I received your message. I will get back to you as
+						soon as possible.{' '}
 					</p>
 					<button className={`Color-button-wrap`} onClick={() => navigate('/')}>
 						<span className="Color-button-text">Back Home</span>
