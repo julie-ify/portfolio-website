@@ -31,7 +31,7 @@ export const projectsArray = [
 			'Rspec',
 		],
 		skills: ['Full-stack', 'UI design', 'Project management'],
-		link: 'https://jxspense.onrender.com/'
+		link: 'https://jxpense.onrender.com'
 	},
 	
 ];
