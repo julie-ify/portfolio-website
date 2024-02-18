@@ -13,6 +13,15 @@ function Menu({ isMenuOpen }) {
 				<li>
 					<a href="/contact-me">CONTACT ME</a>
 				</li>
+				<li>
+					<a
+						href="https://medium.com/@julieifionu"
+						target="_blank"
+						rel="noreferrer"
+					>
+						MY BLOG
+					</a>
+				</li>
 			</ul>
 		</div>
 	);
