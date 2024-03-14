@@ -55,17 +55,16 @@ function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 															{project.technologies.join(' / ')}
 														</div>
 													</div>
-													<button className={`Project-button-wrap btn-order`}>
+													<a
+														href={project.link}
+														target="_blank"
+														rel="noreferrer"
+														className={`Plain-button-wrap`}
+													>
 														<span className="Project-button-text">
-															<a
-																href={project.link}
-																target="_blank"
-																rel="noreferrer"
-															>
-																Visit Website
-															</a>
+															Visit Website
 														</span>
-													</button>
+													</a>
 												</div>
 											</div>
 										</div>
