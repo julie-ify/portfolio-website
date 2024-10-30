@@ -11,29 +11,29 @@ export const projectsArray = [
 		nextProject: 'JXpense',
 		technologies: ['JavaScript', 'React', ' Stripe', 'Serverless function'],
 		skills: ['Interaction Design', 'Front End Development'],
-		link: 'https://soundsavvyshop.netlify.app'
+		link: 'https://soundsavvyshop.netlify.app',
 	},
 	{
 		id: 2,
-		title: 'JXpense',
-		slug: 'jxpense',
+		title: 'CrowdFunding',
+		slug: 'crowdfunding',
 		description:
-			'JXpense is a dynamic Ruby on Rails mobile web-based application designed to effortlessly manage your expenses and income. With its intuitive interface and no-install-required convenience, JXpense allows users to effortlessly track their financial activities in an efficient and user-friendly manner.',
+			'A web3.0 crowdfunding app that enable users to create and manage fundraising campaigns, where others can contribute funds to support projects, causes, or businesses.',
 		background:
-			'JXpense Empowers users with control over their financial records, JXpense offers the flexibility to create custom categories and itemize products within these categories, providing a structured and organized approach to expense management. Users can establish an initial budget and have the flexibility to adjust and increase their budget allocation as needed, ensuring a personalized and adaptable financial tracking experience.',
+			'Users can set campaign goals, track funding progress, and share updates with supporters, creating a community-driven platform for financing innovative ideas or helping individuals in need.',
 		previousProject: 'Soundsavvy',
 		nextProject: 'Insure',
 		technologies: [
-			'Ruby on Rails',
-			'PostgreSQL',
-			'Device',
-			'Capybara',
-			'Rspec',
+			'Solidity',
+			'Hardhat',
+			'Tailwind',
+			'React/Vite',
+			'TypeScript',
+			'Thirdweb',
 		],
-		skills: ['Full-stack', 'UI design', 'Project management'],
-		link: 'https://jxpense.onrender.com'
+		skills: ['Full-stack', 'Smart contract', 'Decentralized app'],
+		link: 'https://crowdfunding-neon.vercel.app/',
 	},
-	
 ];
 
 export const findProject = (projectName) => {

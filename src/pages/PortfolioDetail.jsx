@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 
 function PortfolioDetail({ isMenuOpen, toggleMenu }) {
 	const { slug } = useParams();
-	const slugs = ['soundsavvyshop', 'jxpense'];
+	const slugs = ['soundsavvyshop', 'crowdfunding'];
 	const portfolio = slugs.includes(slug);
 	const titleNameFormat = slug;
 	const project = findProject(titleNameFormat);

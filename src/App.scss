@@ -6,6 +6,10 @@ $light-grey: #eaeaeb;
 $bright-red: #f43030;
 $light: #ffffff;
 
+* {
+	box-sizing: border-box;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
